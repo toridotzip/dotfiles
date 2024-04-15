@@ -1,0 +1,13 @@
+show=drun
+dynamic_lines=true
+matching=fuzzy
+no_actions=true
+layer=overlay
+orientation=vertical
+width=10%
+height=20%
+prompt=Search...
+insensitive=true
+content_halign=center
+hide_search=false
+hide_scroll=true
