@@ -41,16 +41,15 @@
     		"device": "intel_backlight",
     		"format": "{percent}% {icon}",
     		"format-icons": ["", ""]
-	}
+	},
     	"battery": {
         	"format": "{capacity}% {icon}",
         	"format-icons": ["", "", "", "", ""]
     	},
     	"clock": {
         	"format-alt": "{:%a, %d. %b  %H:%M}"
-    	}
+    	},
 	"tray": {
 		"spacing": 10
 	}		
 }
-
