@@ -1,0 +1,56 @@
+{
+	"layer": "top",
+	"position": "top",
+	"spacing": 5,
+	"fixed-center": true,
+	"modules-left": [
+		"sway/workspaces", 
+		"sway/mode"
+	],
+    	"modules-center": [
+		"sway/window"
+	],
+    	"modules-right": [
+		"pulseaudio",
+		"backlight",
+		"battery", 
+		"clock",
+		"tray"
+	],
+    	"sway/window": {
+       		"max-length": 50
+    	},
+	"pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        	"format": "{volume}% {icon}",
+        	"format-bluetooth": "{volume}% {icon} {format_source}",
+        	"format-bluetooth-muted": " {icon} {format_source}",
+        	"format-muted": " {format_source}",
+        	"format-icons": {
+            		"headphone": "",
+            		"hands-free": "",
+            		"headset": "",
+            		"phone": "",
+            		"portable": "",
+            		"car": "",
+            		"default": ["", "", ""]
+        	},
+        	"on-click": "pavucontrol"
+    	},
+	"backlight": {
+    		"device": "intel_backlight",
+    		"format": "{percent}% {icon}",
+    		"format-icons": ["", ""]
+	}
+    	"battery": {
+        	"format": "{capacity}% {icon}",
+        	"format-icons": ["", "", "", "", ""]
+    	},
+    	"clock": {
+        	"format-alt": "{:%a, %d. %b  %H:%M}"
+    	}
+	"tray": {
+		"spacing": 10
+	}		
+}
+
