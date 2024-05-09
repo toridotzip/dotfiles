@@ -16,3 +16,5 @@ PS1='\[$PURPLE\]\u\[$RESET\]@\[$PURPLE\]\h\[$RESET\]: \[$PINK\]\w\[$RESET\]\\$'
 
 export VISUAL=nano
 export EDITOR="$VISUAL"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

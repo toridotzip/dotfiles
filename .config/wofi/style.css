@@ -1,26 +1,27 @@
 #outer-box {
-	border: 1px solid #a1787e;
-	border-radius: 4px;
+	border: 1px solid #ceccc8;
+	border-radius: 2px;
 }
 
 #window {
-	background-color: #0b0d0f;
+	background-color: #080f0d;
 }
 
 #text {
-	font-family: "Lekton Nerd Font Mono";
-	color: #cac8c6;
+	font-family: "Dina";
+	color: #ceccc8;
 }
 
 #text:selected {
-	color: #cac8c6;
+	color: #ceccc8;
 }
 
 #input {
-	margin: 8px;
-	border: 1px solid #a1787e;
-	border-radius: 4px;
-	background-color: #0b0d0f;
+	margin: 4px;
+	border: 1px solid #a1787f;
+	border-radius: 2px;
+	font-family: "Dina";
+	background-color: #080f0d;
 }
 
 #scroll {
@@ -33,6 +34,6 @@
 }
 
 #entry:selected {
-	background-color: #a1787e;
+	background-color: #a1787f;
 	border-radius: 1px;
 }

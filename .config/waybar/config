@@ -12,9 +12,13 @@
 	],
     	"modules-right": [
 		"pulseaudio",
+		"custom/separator",
 		"backlight",
+		"custom/separator",
 		"battery", 
+		"custom/separator",
 		"clock",
+		"custom/separator",
 		"tray"
 	],
     	"sway/window": {
@@ -22,7 +26,7 @@
     	},
 	"pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        	"format": "{volume}% {icon}",
+        	"format": "{volume}%  {icon}",
         	"format-bluetooth": "{volume}% {icon} {format_source}",
         	"format-bluetooth-muted": " {icon} {format_source}",
         	"format-muted": " {format_source}",
@@ -39,11 +43,11 @@
     	},
 	"backlight": {
     		"device": "intel_backlight",
-    		"format": "{percent}% {icon}",
+    		"format": "{percent}%  {icon}",
     		"format-icons": ["", ""]
 	},
     	"battery": {
-        	"format": "{capacity}% {icon}",
+        	"format": "{capacity}%  {icon}",
         	"format-icons": ["", "", "", "", ""]
     	},
     	"clock": {
@@ -51,5 +55,10 @@
     	},
 	"tray": {
 		"spacing": 10
-	}		
+	},
+	"custom/separator": {
+    		"format": "|",
+    		"interval": "once",
+    		"tooltip": false
+	},		
 }

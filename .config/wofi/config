@@ -1,6 +1,5 @@
 show=drun
 dynamic_lines=true
-matching=fuzzy
 no_actions=true
 layer=overlay
 orientation=vertical

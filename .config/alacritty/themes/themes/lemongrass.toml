@@ -1,0 +1,31 @@
+# Primary colors
+[colors.primary]
+background = '#080f0d'
+foreground = '#ceccc8'
+
+# Colors used for 'custom_cursor_colors'
+[colors.cursor]
+text = '#bbbbbb'
+cursor = '#ff0017'
+
+# Colors 0 through 7
+[colors.normal]
+black = '#080f0d'
+red = '#a1787f'
+green = '#859f76'
+yellow = '#859f76'
+blue = '#607385'
+magenta = '#a1787f'
+cyan = '#607385'
+white = '#ceccc8'
+
+# Colors 8 through 15
+[colors.bright]
+black = '#a1787f'
+red = '#a1787f'
+green = '#859f76'
+yellow = '#9c61ab'
+blue = '#607385'
+magenta = '#a1787f'
+cyan = '#607385'
+white = '#ebdbb2'
