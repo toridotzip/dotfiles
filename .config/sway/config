@@ -252,10 +252,10 @@ smart_gaps off
 default_border pixel 2
 
 # swayfx
-blur enable
-blur_passes 1
-blur_radius 3
-blur_xray disable
-corner_radius 2
-default_dim_inactive 0.5
+# blur enable
+# blur_passes 1
+# blur_radius 3
+# blur_xray disable
+corner_radius 1
+# default_dim_inactive 0
 titlebar_separator disable
