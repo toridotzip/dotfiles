@@ -41,6 +41,8 @@ output * bg ~/Downloads/brutal1.jpg fill
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
+exec --no-startup-id "gammastep-indicator"
+
 ### Input configuration
 #
 # Example configuration:
