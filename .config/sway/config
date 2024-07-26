@@ -91,11 +91,14 @@ input "2:10:TPPS/2_Elan_TrackPoint" {
     # Backlight
     bindsym XF86MonBrightnessDown exec xbacklight -dec 1
     bindsym XF86MonBrightnessUp exec xbacklight -inc 1
-    
+
     # Volume
     bindsym XF86AudioRaiseVolume exec pamixer -i 5
     bindsym XF86AudioLowerVolume exec pamixer -d 5
     bindsym XF86AudioMute exec pamixer --toggle-mute
+
+    # Screenshot
+    bindsym Print exec grimshot --notify copy area
 #
 # Moving around:
 #
@@ -215,7 +218,7 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
 	position top
-	
+
 	swaybar_command waybar
 
     # When the status_command prints a new line to stdout, swaybar updates.
@@ -239,10 +242,10 @@ set $title_outline_active #ceccc8
 set $title_outline_unfocused #b55088
 
 # class			border				backgr.				text		indica.			child_border
-client.background	$background	
+client.background	$background
 client.focused		$title_outline_active		$background			$text_color	$title_outline_active	$title_outline_active
 client.focused_inactive	$title_outline_unfocused	$title_outline_unfocused	$text_color	$text_color		$title_outline_unfocused
-client.unfocused	$title_outline_unfocused	$background		$text_color	$title_outline_active	
+client.unfocused	$title_outline_unfocused	$background		$text_color	$title_outline_active
 client.urgent		$color_urgent			$color_urgent			$color_urgent	$color_urgent		$color_urgent
 
 # add gaps

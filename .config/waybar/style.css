@@ -5,7 +5,10 @@
 * {
     border: none;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Symbols Nerd Font, Dina, sans-serif;
+    font-family:
+        Symbols Nerd Font,
+        Dina,
+        sans-serif;
     font-size: 15px;
 
     min-height: 10px;
@@ -15,7 +18,7 @@ window#waybar {
     background-color: @background;
     color: @foreground;
     transition-property: background-color;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -32,7 +35,7 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+    background-color: #3f3f3f;
 }
 
 window#waybar.chromium {
@@ -65,7 +68,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: rgba(161, 120,127, 0.5);
+    background-color: rgba(161, 120, 127, 0.5);
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -74,7 +77,7 @@ button:hover {
 }
 
 #mode {
-    background-color: #64727D;
+    background-color: #64727d;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -88,6 +91,7 @@ button:hover {
 #network,
 #pulseaudio,
 #wireplumber,
+#mpris,
 #custom-media,
 #tray,
 #mode,
@@ -124,7 +128,8 @@ button:hover {
     color: @foreground;
 }
 
-#battery.charging, #battery.plugged {
+#battery.charging,
+#battery.plugged {
     color: @foreground;
     background-color: @pink;
 }
@@ -285,7 +290,7 @@ label:focus {
 }
 
 #scratchpad.empty {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 #privacy {
@@ -310,5 +315,9 @@ label:focus {
 }
 
 #custom-separator {
+    color: @foreground;
+}
+
+#custom-waybar-mpris {
     color: @foreground;
 }

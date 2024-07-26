@@ -109,3 +109,4 @@ source $ZSH/oh-my-zsh.sh
 
 export FZF_DEFAULT_COMMAND='fdfind --type f'
 export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --height=80%"
+export PATH=$HOME/.local/bin:$PATH
